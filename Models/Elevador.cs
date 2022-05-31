@@ -15,13 +15,15 @@ namespace ProjetoElevador.Models
         public int QuantidadePessoas { get; set; }
         public int CapacidadePessoas { get; set; }
         public int QuantidadeAndares { get; set; }
-        
         public string Opcao { get; set; }
 
         /// <summary>
-        /// Iniciar com elevador vazio e no térreo.
+        /// INICIAR ELEVADOR VAZIO DO TÉRREO.
         /// </summary>
-        public void Inicializar()
+       
+
+
+            public void Inicializar()
         {
            
 
@@ -51,7 +53,7 @@ namespace ProjetoElevador.Models
             Console.WriteLine("");
         }
         /// <summary>
-        ///Somar +1 quando entrar no elevador 
+        ///Somar +1 ENTRAR NO ELEVADOR
         /// </summary>
         public void Entrar()
         {
@@ -76,7 +78,7 @@ namespace ProjetoElevador.Models
         }
 
         /// <summary>
-        /// Somar -1 quando sair no elevador
+        /// Somar -1 SAIR DO ELEVADOR
         /// </summary>
         public void Sair()
         {
@@ -98,7 +100,7 @@ namespace ProjetoElevador.Models
             }
         }
         /// <summary>
-        /// Somar +1 andar quando solicita subida do elevador
+        /// Somar +1 SUBIR ELEVADOR
         /// </summary>
         public void Subir()
 
@@ -126,7 +128,7 @@ namespace ProjetoElevador.Models
         }
 
         /// <summary>
-        /// Soma -1 andar quando solicitar descida do elevador
+        /// Soma -1 DESCER ELEVADOR
         /// </summary>
         public void Descer()
         {
@@ -150,11 +152,11 @@ namespace ProjetoElevador.Models
         }
 
         /// <summary>
-        /// Menu com 6 opções de escolha para o usuário.
+        /// MENU DE INTERFACE DO USUARIO
         /// </summary>
         public void Menu()
         {
-            
+
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ ELEVADOR-PROJETO OCEAN 2022 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
             Console.ForegroundColor = ConsoleColor.White;
@@ -259,13 +261,12 @@ namespace ProjetoElevador.Models
                         break;
 
 
-                }             
+                }
 
 
             }
 
             while (continuar);
-
         }
     }
 }
